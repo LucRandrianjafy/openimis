@@ -324,6 +324,11 @@ function fillDropdowns() {
     fillGender();
     fillMaritalStatus();
     fillBeneficiaryCard();
+    fillDisability();
+    fillDisablingDisease();
+    fillCoverageInsurance();
+    fillResidencePlace();
+    fillHouseType();
     fillCurrentRegion();
     //fillCurrentDistricts();
     fillProfessions();
@@ -383,6 +388,31 @@ function fillMaritalStatus() {
 function fillBeneficiaryCard() {
     var $YesNo = Android.getYesNo();
     bindDropdown('ddlBeneficiaryCard', $YesNo, 'value', 'key', null, Android.getString('SelectBeneficiary'));
+}
+
+function fillDisability() {
+    var $YesNo = Android.getBoolYesNo();
+    bindDropdown('ddlDisability', $YesNo, 'value', 'key', null, Android.getString('SelectDisability'));
+}
+
+function fillDisablingDisease() {
+    var $YesNo = Android.getBoolYesNo();
+    bindDropdown('ddlDisablingDisease', $YesNo, 'value', 'key', null, Android.getString('SelectDisablingDisease'));
+}
+
+function fillCoverageInsurance() {
+    var $YesNo = Android.getBoolYesNo();
+    bindDropdown('ddlCoverageInsurance', $YesNo, 'value', 'key', null, Android.getString('SelectCoverageInsurance'));
+}
+
+function fillResidencePlace() {
+    var $ResidencePlace = Android.getRuralUrbain();
+    bindDropdown('ddlResidencePlace', $ResidencePlace, 'value', 'key', null, Android.getString('SelectResidencePlace'));
+}
+
+function fillHouseType() {
+    var $HouseType = Android.getHouseType();
+    bindDropdown('ddlHouseType', $HouseType, 'value', 'key', null, Android.getString('SelectHouseType'));
 }
 
 function fillCurrentRegion() {
