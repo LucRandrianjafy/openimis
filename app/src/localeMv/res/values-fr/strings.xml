@@ -529,8 +529,8 @@
     <string name="Urbain">Urbain</string>
     <string name="Rural">Rurale</string>
     <string name="HouseType">Type habitation</string>
-    <string name="SelectDisability">Select Disability</string>
-    <string name="SelectHouseType">Select House Type</string>
+    <string name="SelectDisability">Sélectionner Handicap</string>
+    <string name="SelectHouseType">Sélectionner Type habitation</string>
 
     <string name="SelectDisablingDisease">Sélectionner une maladie invalidante</string>
     <string name="SelectCoverageInsurance">Sélectionner une assurance de couverture</string>

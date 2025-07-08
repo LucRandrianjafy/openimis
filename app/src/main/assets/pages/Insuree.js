@@ -293,6 +293,12 @@ $(document).ready(function () {
         $('#ddlCurrentVillage').val($.parseJSON(Insuree)[0]["CurVillage"]);
         $('#ddlFSPRegion').val($.parseJSON(Insuree)[0]["FSPRegion"]).trigger("change");
 
+        $('#ddlDisability').val($.parseJSON(Insuree)[0]["Disability"]).trigger("change");
+        $('#ddlDisablingDisease').val($.parseJSON(Insuree)[0]["DisablingDisease"]).trigger("change");
+        $('#ddlCoverageInsurance').val($.parseJSON(Insuree)[0]["CoverageInsurance"]).trigger("change");
+        $('#ddlHouseType').val($.parseJSON(Insuree)[0]["HouseType"]).trigger("change");
+        $('#ddlResidencePlace').val($.parseJSON(Insuree)[0]["ResidencePlace"]).trigger("change");
+
         try {
             $('#ddlFSPDistrict').val($.parseJSON(Insuree)[0]["FSPDistrict"]).trigger("change");
         } catch (e) {

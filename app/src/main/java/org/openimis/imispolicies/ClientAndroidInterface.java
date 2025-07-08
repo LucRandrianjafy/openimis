@@ -1518,7 +1518,7 @@ public class ClientAndroidInterface {
     @SuppressWarnings("unused")
     public String getInsuree(int InsureeId) {
         @Language("SQL")
-        String Query = "SELECT InsureeId, FamilyId, CHFID, LastName, OtherNames, DOB, Gender, Marital, isHead, IdentificationNumber, Phone, isOffline , PhotoPath, CardIssued, Relationship, Profession, Education, Email, TypeOfId, I.HFID, CurrentAddress,R.LocationId CurRegion, D.LocationId CurDistrict, W.LocationId CurWard,  I.CurVillage, HFR.LocationId FSPRegion, HFD.LocationId FSPDistrict, HF.HFLevel FSPCategory, I.Vulnerability, ProfessionalSituation, IncomeLevel, PaymentMethod, OtherHousehold, AccountDetails\n" +
+        String Query = "SELECT InsureeId, FamilyId, CHFID, LastName, OtherNames, DOB, Gender, Marital, isHead, IdentificationNumber, Phone, isOffline , PhotoPath, CardIssued, Relationship, Profession, Education, Email, Disability, DisablingDisease, CoverageInsurance, HouseType, ResidencePlace, TypeOfId, I.HFID, CurrentAddress,R.LocationId CurRegion, D.LocationId CurDistrict, W.LocationId CurWard,  I.CurVillage, HFR.LocationId FSPRegion, HFD.LocationId FSPDistrict, HF.HFLevel FSPCategory, I.Vulnerability, ProfessionalSituation, IncomeLevel, PaymentMethod, OtherHousehold, AccountDetails\n" +
                 "FROM tblInsuree I\n" +
                 "LEFT OUTER JOIN tblLocations V ON V.LocationId = I.CurVillage\n" +
                 "LEFT OUTER JOIN tblLocations W ON W.LocationId = V.ParentLocationId\n" +
