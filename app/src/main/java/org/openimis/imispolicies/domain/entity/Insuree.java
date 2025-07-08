@@ -91,7 +91,6 @@ public class Insuree implements Parcelable {
         policies = in.createTypedArrayList(Policy.CREATOR);
     }
 
-
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(chfId);
